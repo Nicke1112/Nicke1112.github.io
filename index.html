@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat and Voice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="chat-container">
+            <div id="chat-box"></div>
+            <input type="text" id="messageInput" placeholder="Skriv ett meddelande...">
+            <button id="sendMessageButton">Skicka</button>
+        </div>
+        <div id="voice-container">
+            <button id="startVoiceButton">Starta samtal</button>
+            <button id="endVoiceButton" disabled>Avsluta samtal</button>
+            <button id="shareScreenButton" disabled>Dela skärm</button>
+            <audio id="localAudio" autoplay muted></audio>
+            <audio id="remoteAudio" autoplay></audio>
+            <audio id="localAudio" autoplay muted></audio>
+            <audio id="remoteAudio" autoplay></audio>
+            <video id="remoteScreen" autoplay></video>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
